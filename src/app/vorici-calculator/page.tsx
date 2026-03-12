@@ -29,15 +29,18 @@ export const metadata: Metadata = {
 
 export default function VoriciCalculatorPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-poe-gold mb-2">
+    <div className="max-w-3xl mx-auto px-5 py-10">
+      <div className="mb-8 animate-fade-in">
+        <p className="font-[family-name:var(--font-heading)] text-poe-text-dim text-xs tracking-[4px] uppercase mb-3">
+          Crafting Tool
+        </p>
+        <h1 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl text-poe-gold tracking-wide mb-3">
           Vorici Chromatic Calculator
         </h1>
-        <p className="text-poe-text-dim">
-          Find the cheapest method to get your desired socket colors. Enter your
-          item&apos;s stat requirements and desired colors to compare crafting
-          methods.
+        <hr className="poe-separator max-w-[200px] mb-4" />
+        <p className="text-poe-text-dim text-[15px] leading-relaxed max-w-xl">
+          Enter your item&apos;s stat requirements and desired socket colors to
+          find the cheapest crafting method.
         </p>
       </div>
 

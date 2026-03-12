@@ -25,80 +25,79 @@ export const metadata: Metadata = {
   },
 };
 
+const JEWELS = [
+  { name: "Elegant Hubris", faction: "Eternal Empire", color: "#af6025" },
+  { name: "Militant Faith", faction: "Templars", color: "#c8b07a" },
+  { name: "Brutal Restraint", faction: "Maraketh", color: "#2dc50e" },
+  { name: "Lethal Pride", faction: "Karui", color: "#d02040" },
+  { name: "Glorious Vanity", faction: "Vaal", color: "#4488ee" },
+];
+
 export default function TimelessJewelPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-poe-gold mb-2">
+    <div className="max-w-3xl mx-auto px-5 py-10">
+      <div className="mb-8 animate-fade-in">
+        <p className="font-[family-name:var(--font-heading)] text-poe-text-dim text-xs tracking-[4px] uppercase mb-3">
+          Build Optimization
+        </p>
+        <h1 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl text-poe-gold tracking-wide mb-3">
           Timeless Jewel Calculator
         </h1>
-        <p className="text-poe-text-dim">
+        <hr className="poe-separator max-w-[200px] mb-4" />
+        <p className="text-poe-text-dim text-[15px] leading-relaxed max-w-xl">
           Find the optimal Timeless Jewel seed for your passive tree build.
         </p>
       </div>
 
-      {/* Coming Soon Card */}
-      <div className="bg-poe-card border border-poe-border rounded-lg p-12 text-center">
-        <div className="text-5xl mb-6">◆</div>
-        <h2 className="text-2xl font-bold text-poe-gold mb-4">Coming Soon</h2>
-        <p className="text-poe-text-dim max-w-lg mx-auto mb-8 leading-relaxed">
-          We are building a comprehensive Timeless Jewel Calculator that will
-          help you find the best jewel seed for your build. Analyze notable
-          transformations for all five Timeless Jewel types:
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-10">
-          {[
-            { name: "Elegant Hubris", faction: "Eternal Empire" },
-            { name: "Militant Faith", faction: "Templars" },
-            { name: "Brutal Restraint", faction: "Maraketh" },
-            { name: "Lethal Pride", faction: "Karui" },
-            { name: "Glorious Vanity", faction: "Vaal" },
-          ].map((jewel) => (
-            <div
-              key={jewel.name}
-              className="bg-poe-highlight border border-poe-border rounded-lg p-4"
-            >
-              <div className="text-poe-gold-light text-sm font-semibold">
-                {jewel.name}
-              </div>
-              <div className="text-poe-text-dim text-xs">{jewel.faction}</div>
-            </div>
-          ))}
+      {/* Coming Soon */}
+      <div className="poe-frame animate-fade-in-delay-1">
+        <div className="poe-frame-header text-center">
+          <h2 className="font-[family-name:var(--font-heading)] text-poe-gold text-sm tracking-[4px] uppercase">
+            In Development
+          </h2>
         </div>
+        <div className="poe-frame-body text-center space-y-6">
+          <p className="text-poe-text-dim leading-relaxed max-w-md mx-auto">
+            A comprehensive seed analyzer for all Timeless Jewel types. Preview
+            node transformations. Find optimal placements.
+          </p>
 
-        {/* Email Signup Placeholder */}
-        <div className="bg-poe-highlight border border-poe-border rounded-lg p-6 max-w-md mx-auto">
-          <h3 className="text-poe-text font-semibold mb-2">Get Notified</h3>
-          <p className="text-poe-text-dim text-sm mb-4">
-            Be the first to know when the Timeless Jewel Calculator launches.
-          </p>
-          <div className="flex gap-2">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1"
-              disabled
-            />
-            <button
-              className="bg-poe-gold text-poe-bg px-4 py-2 rounded-md font-semibold text-sm opacity-50 cursor-not-allowed"
-              disabled
-            >
-              Notify Me
-            </button>
+          {/* Jewel Types */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md mx-auto text-left">
+            {JEWELS.map((jewel) => (
+              <div
+                key={jewel.name}
+                className="stat-card flex items-center gap-3"
+              >
+                <div
+                  className="w-3 h-3 rounded-full shrink-0"
+                  style={{
+                    backgroundColor: jewel.color,
+                    boxShadow: `0 0 6px ${jewel.color}40`,
+                  }}
+                />
+                <div>
+                  <div className="text-poe-text-bright text-sm">
+                    {jewel.name}
+                  </div>
+                  <div className="text-poe-text-dim text-xs">
+                    {jewel.faction}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <p className="text-poe-text-dim text-xs mt-2">
-            Email notifications coming soon.
-          </p>
         </div>
       </div>
 
       {/* SEO Content */}
-      <div className="bg-poe-card border border-poe-border rounded-lg p-6 mt-8">
-        <h2 className="text-poe-gold text-lg font-bold mb-4">
-          About Timeless Jewels in Path of Exile
-        </h2>
-        <div className="space-y-3 text-sm text-poe-text-dim leading-relaxed">
+      <div className="poe-frame mt-6 animate-fade-in-delay-2">
+        <div className="poe-frame-header">
+          <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-sm tracking-widest uppercase">
+            About Timeless Jewels
+          </h2>
+        </div>
+        <div className="poe-frame-body space-y-4 text-sm text-poe-text-dim leading-relaxed">
           <p>
             Timeless Jewels are powerful unique jewels in Path of Exile that
             transform passive skill tree nodes within their radius. Each jewel
