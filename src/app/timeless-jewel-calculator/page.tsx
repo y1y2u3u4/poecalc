@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Timeless Jewel Calculator - PoE Jewel Seed Finder",
@@ -35,6 +36,8 @@ const JEWELS = [
 
 export default function TimelessJewelPage() {
   return (
+    <>
+      <Breadcrumb items={[{ label: "Timeless Jewel Calculator" }]} />
     <div className="max-w-3xl mx-auto px-5 py-10">
       <div className="mb-8 animate-fade-in">
         <p className="font-[family-name:var(--font-heading)] text-poe-text-dim text-xs tracking-[4px] uppercase mb-3">
@@ -142,5 +145,6 @@ export default function TimelessJewelPage() {
         }}
       />
     </div>
+    </>
   );
 }

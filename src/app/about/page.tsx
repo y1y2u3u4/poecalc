@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "About",
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
+    <>
+      <Breadcrumb items={[{ label: "About" }]} />
     <div className="max-w-3xl mx-auto px-5 py-10">
       <div className="mb-8 animate-fade-in">
         <h1 className="font-[family-name:var(--font-heading)] text-2xl text-poe-gold tracking-wide mb-3">
@@ -86,5 +89,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

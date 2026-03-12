@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import VoriciCalculator from "@/components/VoriciCalculator";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Vorici Chromatic Calculator - PoE Socket Color Calculator",
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
 
 export default function VoriciCalculatorPage() {
   return (
+    <>
+      <Breadcrumb items={[{ label: "Vorici Chromatic Calculator" }]} />
     <div className="max-w-3xl mx-auto px-5 py-10">
       <div className="mb-8 animate-fade-in">
         <p className="font-[family-name:var(--font-heading)] text-poe-text-dim text-xs tracking-[4px] uppercase mb-3">
@@ -68,5 +71,6 @@ export default function VoriciCalculatorPage() {
         }}
       />
     </div>
+    </>
   );
 }
