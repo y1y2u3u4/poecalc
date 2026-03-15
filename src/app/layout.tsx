@@ -25,20 +25,22 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   metadataBase: new URL("https://poecalc.tools"),
   title: {
-    default: "PoE Calculator Tools - Path of Exile Calculators",
-    template: "%s | PoE Calculator Tools",
+    default: "PoE Calculator Tools - Free Path of Exile Crafting Calculators",
+    template: "%s | PoECalc Tools",
   },
   description:
-    "Free Path of Exile calculator tools. Vorici Chromatic Calculator, Timeless Jewel Calculator, and more. Find the cheapest crafting methods for your PoE items.",
+    "Free PoE calculator tools: Vorici Chromatic Calculator, socket color optimizer, and Timeless Jewel Calculator. Find the cheapest crafting methods instantly.",
   keywords: [
     "poe calculator",
-    "path of exile tools",
+    "poe color calculator",
+    "poe socket color calculator",
     "vorici calculator",
-    "chromatic calculator",
-    "poe chromatic orb",
+    "poe chromatic calculator",
+    "chromatic orb calculator",
+    "poe socket calculator",
     "timeless jewel calculator",
     "path of exile crafting",
-    "poe socket colors",
+    "poe crafting tools",
   ],
   openGraph: {
     type: "website",

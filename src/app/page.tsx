@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PoE Calculator Tools - Free Path of Exile Calculators",
+  title: "PoE Calculator Tools - Free Color & Chromatic Calculators",
   description:
-    "Free Path of Exile calculator tools including Vorici Chromatic Calculator and Timeless Jewel Calculator. Find the cheapest crafting methods for your PoE items.",
+    "Free PoE calculator tools: Vorici color calculator, chromatic orb cost estimator, socket color optimizer. Compare crafting methods with exact probability math.",
   alternates: {
     canonical: "https://poecalc.tools",
   },
@@ -123,9 +123,9 @@ export default function HomePage() {
               </div>
               <div className="poe-frame-body">
                 <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
-                  Compare Chromatic Orb spam against Crafting Bench recipes.
-                  Probability distributions with 90th and 99th percentile
-                  estimates.
+                  Free PoE color calculator. Compare Chromatic Orb spam against
+                  Crafting Bench recipes with exact probability math, 90th and
+                  99th percentile cost estimates.
                 </p>
                 <div className="flex items-center gap-1.5 mb-4">
                   <span className="w-5 h-5 rounded-full bg-radial-[ellipse_at_35%_30%] from-[#ff5070] to-[#7a1020] border border-[#c41e3a] shadow-[0_0_6px_rgba(196,30,58,0.4)]" />
@@ -134,6 +134,69 @@ export default function HomePage() {
                   <span className="w-2 h-0.5 bg-[#3a2e1f] rounded-full" />
                   <span className="w-5 h-5 rounded-full bg-radial-[ellipse_at_35%_30%] from-[#70b0ff] to-[#0a2545] border border-[#3088e0] shadow-[0_0_6px_rgba(48,136,224,0.4)]" />
                 </div>
+                <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
+                  Open Calculator
+                </span>
+              </div>
+            </Link>
+
+            {/* DPS Calculator */}
+            <Link
+              href="/poe-dps-calculator"
+              className="group poe-frame hover:border-poe-gold/40 transition-all duration-300 animate-fade-in-delay-2"
+            >
+              <div className="poe-frame-header flex items-center gap-4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="shrink-0">
+                  <path d="M10 38L38 10" stroke="#c41e3a" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M32 8L40 10L38 18" stroke="#c41e3a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="24" cy="24" r="16" stroke="#af6025" strokeWidth="1.5" strokeDasharray="4 3" opacity="0.4" />
+                  <circle cx="24" cy="24" r="3" fill="#af6025" opacity="0.6" />
+                </svg>
+                <div>
+                  <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-[15px] tracking-wide group-hover:text-poe-gold-bright transition-colors">
+                    DPS Calculator
+                  </h2>
+                  <p className="text-poe-text-dim text-xs mt-0.5">
+                    Damage Per Second
+                  </p>
+                </div>
+              </div>
+              <div className="poe-frame-body">
+                <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
+                  Calculate your PoE character&apos;s DPS with base damage, attack speed,
+                  crit chance, and multiplier. Instant results.
+                </p>
+                <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
+                  Open Calculator
+                </span>
+              </div>
+            </Link>
+
+            {/* Currency Calculator */}
+            <Link
+              href="/poe-currency-calculator"
+              className="group poe-frame hover:border-poe-gold/40 transition-all duration-300 animate-fade-in-delay-2"
+            >
+              <div className="poe-frame-header flex items-center gap-4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="shrink-0">
+                  <circle cx="24" cy="24" r="16" stroke="#af6025" strokeWidth="1.5" />
+                  <circle cx="24" cy="24" r="12" stroke="#af6025" strokeWidth="1" opacity="0.4" />
+                  <text x="24" y="29" textAnchor="middle" fill="#af6025" fontSize="16" fontWeight="bold">C</text>
+                </svg>
+                <div>
+                  <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-[15px] tracking-wide group-hover:text-poe-gold-bright transition-colors">
+                    Currency Calculator
+                  </h2>
+                  <p className="text-poe-text-dim text-xs mt-0.5">
+                    Exchange Rate Reference
+                  </p>
+                </div>
+              </div>
+              <div className="poe-frame-body">
+                <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
+                  Convert between Chaos, Divine, Exalted, and other PoE currencies
+                  with reference exchange rates.
+                </p>
                 <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
                   Open Calculator
                 </span>
@@ -162,8 +225,7 @@ export default function HomePage() {
               <div className="poe-frame-body">
                 <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
                   Search all jewel seeds, preview node transformations, and find
-                  the optimal placement for your build. All six jewel types
-                  supported.
+                  the optimal placement for your build.
                 </p>
                 <span className="text-poe-gold/60 text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase">
                   Coming Soon
@@ -290,6 +352,45 @@ export default function HomePage() {
               Faith devotion threshold or a Lethal Pride with double damage and fire resistance, the
               calculator will find it.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links to Guides */}
+      <section className="max-w-3xl mx-auto px-5 pb-8">
+        <div className="poe-frame animate-fade-in">
+          <div className="poe-frame-header">
+            <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-sm tracking-widest uppercase">
+              Guides &amp; Resources
+            </h2>
+          </div>
+          <div className="poe-frame-body">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <Link href="/poe-socket-guide" className="group stat-card hover:border-poe-gold/40 transition-colors">
+                <div className="text-poe-gold-light font-[family-name:var(--font-heading)] text-xs tracking-wide mb-1 group-hover:text-poe-gold-bright">
+                  Socket Guide
+                </div>
+                <p className="text-poe-text-dim text-xs leading-relaxed">
+                  Colors, links, Jeweller&apos;s &amp; Fusing orbs explained
+                </p>
+              </Link>
+              <Link href="/chromatic-orb-recipe" className="group stat-card hover:border-poe-gold/40 transition-colors">
+                <div className="text-poe-gold-light font-[family-name:var(--font-heading)] text-xs tracking-wide mb-1 group-hover:text-poe-gold-bright">
+                  Chromatic Orb Recipe
+                </div>
+                <p className="text-poe-text-dim text-xs leading-relaxed">
+                  Vendor recipe, farming tips &amp; spending guide
+                </p>
+              </Link>
+              <Link href="/off-color-calculator" className="group stat-card hover:border-poe-gold/40 transition-colors">
+                <div className="text-poe-gold-light font-[family-name:var(--font-heading)] text-xs tracking-wide mb-1 group-hover:text-poe-gold-bright">
+                  Off-Color Calculator
+                </div>
+                <p className="text-poe-text-dim text-xs leading-relaxed">
+                  Cheapest method for off-color sockets
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

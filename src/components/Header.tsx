@@ -11,17 +11,20 @@ export default function Header() {
           PoECalc
           <span className="text-poe-text-dim">.tools</span>
         </Link>
-        <nav className="flex items-center gap-8 text-[13px]">
+        <nav className="flex items-center gap-4 md:gap-6 text-[13px] flex-wrap">
           <Link href="/vorici-calculator" className="poe-link tracking-wide">
-            Vorici Calculator
+            Vorici Calc
           </Link>
-          <Link
-            href="/timeless-jewel-calculator"
-            className="poe-link tracking-wide"
-          >
-            Timeless Jewel
+          <Link href="/poe-dps-calculator" className="poe-link tracking-wide">
+            DPS Calc
           </Link>
-          <Link href="/about" className="poe-link tracking-wide">
+          <Link href="/poe-currency-calculator" className="poe-link tracking-wide">
+            Currency
+          </Link>
+          <Link href="/poe-socket-guide" className="poe-link tracking-wide hidden md:inline">
+            Socket Guide
+          </Link>
+          <Link href="/about" className="poe-link tracking-wide hidden md:inline">
             About
           </Link>
         </nav>
