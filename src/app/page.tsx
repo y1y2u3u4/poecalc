@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PoE Calculator Tools - Free Color & Chromatic Calculators",
+  title: "PoE Calculator Tools - Free Color, Chromatic & Gem Calculators (2026)",
   description:
-    "Free PoE calculator tools: Vorici color calculator, chromatic orb cost estimator, socket color optimizer. Compare crafting methods with exact probability math.",
+    "Free PoE calculator tools: socket color calculator, chromatic orb cost estimator, gem quality calculator, DPS tool. Compare crafting methods with exact probability math. Updated 2026.",
   alternates: {
     canonical: "https://poecalc.tools",
   },
@@ -140,6 +140,49 @@ export default function HomePage() {
               </div>
             </Link>
 
+            {/* PoE Color Calculator */}
+            <Link
+              href="/poe-color-calculator"
+              className="group poe-frame hover:border-poe-gold/40 transition-all duration-300 animate-fade-in-delay-1"
+            >
+              <div className="poe-frame-header flex items-center gap-4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="shrink-0">
+                  <circle cx="16" cy="24" r="10" fill="#0a2545" stroke="#3088e0" strokeWidth="1.5" />
+                  <circle cx="16" cy="24" r="5" fill="url(#blueGem2)" />
+                  <circle cx="32" cy="24" r="10" fill="#7a1020" stroke="#c41e3a" strokeWidth="1.5" />
+                  <circle cx="32" cy="24" r="5" fill="url(#redGem2)" />
+                  <path d="M22 20L26 28" stroke="#af6025" strokeWidth="1.5" opacity="0.6" />
+                  <defs>
+                    <radialGradient id="blueGem2" cx="0.35" cy="0.3">
+                      <stop offset="0%" stopColor="#70b0ff" />
+                      <stop offset="100%" stopColor="#3088e0" />
+                    </radialGradient>
+                    <radialGradient id="redGem2" cx="0.35" cy="0.3">
+                      <stop offset="0%" stopColor="#ff5070" />
+                      <stop offset="100%" stopColor="#c41e3a" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+                <div>
+                  <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-[15px] tracking-wide group-hover:text-poe-gold-bright transition-colors">
+                    PoE Color Calculator
+                  </h2>
+                  <p className="text-poe-text-dim text-xs mt-0.5">
+                    Socket Color Costs
+                  </p>
+                </div>
+              </div>
+              <div className="poe-frame-body">
+                <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
+                  Find the cheapest way to color your sockets. Compare Chromatic
+                  Orb spam vs Crafting Bench with exact probability math.
+                </p>
+                <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
+                  Open Calculator
+                </span>
+              </div>
+            </Link>
+
             {/* DPS Calculator */}
             <Link
               href="/poe-dps-calculator"
@@ -196,6 +239,44 @@ export default function HomePage() {
                 <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
                   Convert between Chaos, Divine, Exalted, and other PoE currencies
                   with reference exchange rates.
+                </p>
+                <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
+                  Open Calculator
+                </span>
+              </div>
+            </Link>
+
+            {/* Imbued Gem Calculator */}
+            <Link
+              href="/imbued-gem-calculator"
+              className="group poe-frame hover:border-poe-gold/40 transition-all duration-300 animate-fade-in-delay-2"
+            >
+              <div className="poe-frame-header flex items-center gap-4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="shrink-0">
+                  <path d="M24 6L36 18V34L24 42L12 34V18L24 6Z" fill="#1a1510" stroke="#af6025" strokeWidth="1.5" />
+                  <path d="M24 12L32 20V32L24 38L16 32V20L24 12Z" fill="url(#gemGrad)" opacity="0.7" />
+                  <circle cx="24" cy="25" r="5" fill="#af6025" opacity="0.3" />
+                  <circle cx="24" cy="25" r="2" fill="#ffd700" opacity="0.6" />
+                  <defs>
+                    <linearGradient id="gemGrad" x1="24" y1="12" x2="24" y2="38">
+                      <stop offset="0%" stopColor="#3088e0" stopOpacity="0.4" />
+                      <stop offset="100%" stopColor="#af6025" stopOpacity="0.1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div>
+                  <h2 className="font-[family-name:var(--font-heading)] text-poe-gold-light text-[15px] tracking-wide group-hover:text-poe-gold-bright transition-colors">
+                    Imbued Gem Calculator
+                  </h2>
+                  <p className="text-poe-text-dim text-xs mt-0.5">
+                    Quality &amp; Leveling
+                  </p>
+                </div>
+              </div>
+              <div className="poe-frame-body">
+                <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
+                  Calculate GCP costs for gem quality upgrades and estimate
+                  experience needed for gem leveling.
                 </p>
                 <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
                   Open Calculator

@@ -3,9 +3,9 @@ import VoriciCalculator from "@/components/VoriciCalculator";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "PoE Color Calculator - Vorici Chromatic Socket Color Tool",
+  title: "Vorici Calculator - PoE Chromatic Socket Color Tool (Free 2026)",
   description:
-    "Free PoE socket color calculator. Find the cheapest way to chrome your items — compare Chromatic Orb spam vs Crafting Bench in seconds. Exact probability math with 90th/99th percentile estimates.",
+    "Free Vorici chromatic calculator — find the cheapest socket coloring method in 3 seconds. Compare Chrome spam vs Crafting Bench with exact math. 90th/99th percentile estimates included.",
   keywords: [
     "poe color calculator",
     "poe socket color calculator",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     canonical: "https://poecalc.tools/vorici-calculator",
   },
   openGraph: {
-    title: "PoE Color Calculator - Vorici Chromatic Socket Color Tool",
+    title: "Vorici Calculator - PoE Chromatic Socket Color Tool (Free)",
     description:
-      "Free PoE socket color calculator. Find the cheapest way to chrome your items — compare Chromatic Orb spam vs Crafting Bench in seconds.",
+      "Free Vorici chromatic calculator — find the cheapest socket coloring method in 3 seconds. Compare Chrome spam vs Crafting Bench with exact math.",
     url: "https://poecalc.tools/vorici-calculator",
     type: "website",
   },
