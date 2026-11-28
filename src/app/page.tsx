@@ -289,9 +289,6 @@ export default function HomePage() {
               href="/timeless-jewel-calculator"
               className="group poe-frame hover:border-poe-gold/40 transition-all duration-300 relative animate-fade-in-delay-2"
             >
-              <div className="absolute top-3 right-4 font-[family-name:var(--font-heading)] text-[9px] tracking-[2px] uppercase text-poe-gold/60 border border-poe-gold/20 px-2 py-0.5">
-                Soon
-              </div>
               <div className="poe-frame-header flex items-center gap-4">
                 <JewelIcon />
                 <div>
@@ -299,17 +296,17 @@ export default function HomePage() {
                     Timeless Jewel Calculator
                   </h2>
                   <p className="text-poe-text-dim text-xs mt-0.5">
-                    Seed &amp; Node Analysis
+                    Seed Checker &amp; Trade Search
                   </p>
                 </div>
               </div>
               <div className="poe-frame-body">
                 <p className="text-poe-text-dim text-sm leading-relaxed mb-4">
-                  Search all jewel seeds, preview node transformations, and find
-                  the optimal placement for your build.
+                  Validate any Timeless Jewel seed, see each conqueror&apos;s
+                  keystone, and open an exact-seed trade search.
                 </p>
-                <span className="text-poe-gold/60 text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase">
-                  Coming Soon
+                <span className="text-poe-gold text-xs font-[family-name:var(--font-heading)] tracking-widest uppercase group-hover:tracking-[4px] transition-all">
+                  Open Calculator
                 </span>
               </div>
             </Link>
@@ -427,11 +424,10 @@ export default function HomePage() {
               jewel socket locations on the passive tree, manual testing is impractical.
             </p>
             <p>
-              Our upcoming Timeless Jewel Calculator will let you search through all possible seeds,
-              preview exactly how each seed transforms the notable passives in its radius, and find the
-              optimal jewel placement for your specific build. Whether you need a particular Militant
-              Faith devotion threshold or a Lethal Pride with double damage and fire resistance, the
-              calculator will find it.
+              Our Timeless Jewel Calculator checks whether a seed is a real roll for Glorious Vanity,
+              Lethal Pride, Brutal Restraint, Militant Faith, Elegant Hubris or Heroic Tragedy, shows which
+              keystone each conqueror grants, and opens an official trade search for that exact seed
+              across every conqueror, so you can find the cheapest copy of the seed your build needs.
             </p>
           </div>
         </div>

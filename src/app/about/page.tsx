@@ -57,10 +57,9 @@ export default function AboutPage() {
                 <Link href="/timeless-jewel-calculator" className="poe-link text-poe-gold font-semibold">
                   Timeless Jewel Calculator
                 </Link>
-                <span className="text-poe-text-dim text-xs ml-2">(Coming Soon)</span>
                 <p className="text-poe-text-dim mt-1">
-                  Find the optimal Timeless Jewel seed for your passive tree
-                  build. All five jewel types supported.
+                  Check any Timeless Jewel seed, see each conqueror&apos;s keystone and
+                  search trade for that exact seed. All six jewel types supported.
                 </p>
               </li>
             </ul>
