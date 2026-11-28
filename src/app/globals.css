@@ -411,3 +411,22 @@ select:focus {
   animation: fadeInUp 0.4s ease-out 0.3s forwards;
   opacity: 0;
 }
+
+/* ===== PRIMARY BUTTON ===== */
+.poe-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, #3a2414 0%, #24160c 100%);
+  border: 1px solid #af6025;
+  color: var(--color-poe-gold-bright);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+.poe-btn:hover {
+  border-color: #e8c88a;
+  box-shadow: 0 0 12px rgba(175, 96, 37, 0.35);
+  color: #fff3d6;
+}

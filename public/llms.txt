@@ -1,0 +1,16 @@
+# PoECalc.tools
+
+> Free Path of Exile calculators. All calculations run in the browser, no login.
+
+## Tools
+- [Vorici Chromatic Calculator](https://poecalc.tools/vorici-calculator): cheapest Vorici bench craft or chromatic orb count for target socket colours.
+- [PoE Timeless Jewel Calculator](https://poecalc.tools/timeless-jewel-calculator): validates Glorious Vanity, Lethal Pride, Brutal Restraint, Militant Faith, Elegant Hubris and Heroic Tragedy seeds, lists conqueror keystones and seed ranges, and builds an exact-seed pathofexile.com trade search.
+- [PoE Color Calculator](https://poecalc.tools/poe-color-calculator): socket colour odds.
+- [Off-Color Calculator](https://poecalc.tools/off-color-calculator): odds for off-colour sockets.
+- [Imbued Gem Calculator](https://poecalc.tools/imbued-gem-calculator): gem quality and XP needed.
+- [PoE Currency Calculator](https://poecalc.tools/poe-currency-calculator): currency conversions.
+- [PoE DPS Calculator](https://poecalc.tools/poe-dps-calculator): quick DPS estimates.
+
+## Guides
+- [Chromatic Orb Recipe](https://poecalc.tools/chromatic-orb-recipe)
+- [PoE Socket Guide](https://poecalc.tools/poe-socket-guide)
